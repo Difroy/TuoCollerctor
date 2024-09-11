@@ -2,18 +2,19 @@ package com.generation.collector.model.entities;
 
 public enum Genre {
 
-	HORROR ("ADULT"),
-	DRAMA ("ADULT"),
-	COMEDY ("KID");
+	HORROR (true),
+	DRAMA (true),
+	COMEDY (false);
 	
 	protected boolean adult;
 	
-	Genre (boolean adult)
+	Genre (boolean adult){
+	this.adult = adult;
 	}
 
-	
-this.adult = adult;
 }
+
+
 
 
 /*
