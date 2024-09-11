@@ -87,8 +87,6 @@ public class Collector {
 		
 		if (book = true) {
 			
-			
-			
 		}
 		
 		return false;

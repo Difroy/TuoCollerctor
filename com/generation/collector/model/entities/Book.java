@@ -16,34 +16,7 @@ public class Book extends Product{
 
 
 
-/*Product
-    classe astratta
-    id, name, value, description (getter e setter e costruttori)
-
-Book 
-    sottoclasse concreta di Product
-    writer, language, pages, genre (genre è di tipo GENRE)
-
-Genre
-    ENUM con una proprietà "adult" di tipo boolean
-    Es: HORROR(true)
-    DRAMA(true)
-    COMEDY(false)
-
-
-Action figure
-    sottoclasse concreta di Product
-    height, weight, material
-
-Comic
-    sottoclasse concreta di Book
-    artists (string), year, publisher
-
-Collector
-    id, name, surname, location, products (List Product)
-    metodi
-    getTotalValue() valore totale di tutta la sua collection
-    familySafe():boolean, un collector è FamilySafe se non ha nessun prodotto adult.
+/* familySafe():boolean, un collector è FamilySafe se non ha nessun prodotto adult.
     (da fare per ultimo)
 
 CollectorImporter (INTERFACCIA)
