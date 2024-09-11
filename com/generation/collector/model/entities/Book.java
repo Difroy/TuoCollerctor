@@ -5,6 +5,11 @@ public class Book extends Product{
 	protected String writer, language;
 	public int pages;
 	Genre genre;
+    private boolean explicitContent;
+
+    public boolean isAdult() {
+        return explicitContent;
+    }
 	
 	public Book(int id, int value, String name, String description,String writer,String language, int pages,Genre genre) {
 		super(id, value, name, description);

@@ -8,7 +8,7 @@ public class Collector {
 	protected final int id;
 	protected String name, surname, location;
 	public List<Product>listProducts = new ArrayList <Product>(); 
-	Book book;
+	
 	
 	public Collector(int id, String name, String surname, String location){
 	
@@ -83,15 +83,18 @@ public class Collector {
 		return totale;
 	}
 	
-	/*public boolean familySafe(Book book) {
-		
-		if (book = true) {
-			
-		}
-		
-		return false;
-	}*/
-	
+	public String familySafe() {
+	    for (Product p : listProducts) {
+	        if (p instanceof Book) {
+	            Book book = (Book) p;
+	            if (book.isAdult()) {
+	                return "Contenuti per adulti!";
+	            }
+	        }  
+	    }
+	    return "Contenuto FamilySafe!";
+	}
+
 	
 	
 }
@@ -100,9 +103,6 @@ public class Collector {
 Collector
     
     
-    
-    familySafe():boolean, un collector è FamilySafe se non ha nessun prodotto adult.
-    (da fare per ultimo)
 
 CollectorImporter (INTERFACCIA)
 public Collector importCollector(String source);
