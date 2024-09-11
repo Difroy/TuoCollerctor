@@ -95,8 +95,6 @@ public class Collector {
 	    return "Contenuto FamilySafe!";
 	}
 
-	
-	
 }
 
 /*

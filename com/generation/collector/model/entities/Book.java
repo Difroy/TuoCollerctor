@@ -21,8 +21,7 @@ public class Book extends Product{
 
 
 
-/* familySafe():boolean, un collector è FamilySafe se non ha nessun prodotto adult.
-    (da fare per ultimo)
+/* 
 
 CollectorImporter (INTERFACCIA)
 public Collector importCollector(String source);
