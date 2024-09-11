@@ -14,7 +14,6 @@ public class Comic extends Book {
 		this.year = year;
 
 	}
-
 }
 
 

@@ -6,7 +6,7 @@ public class Book extends Product{
 	public int pages;
 	Genre genre;
 	
-	public Book(int id, int value, String name, String description) {
+	public Book(int id, int value, String name, String description,String writer,String language, int pages,Genre genre) {
 		super(id, value, name, description);
 		
 	}

@@ -37,8 +37,5 @@ public class ActionFigure extends Product {
 	public void setMaterial(String material) {
 		this.material = material;
 	}
-	
-	
-
 }
 
