@@ -5,18 +5,11 @@ import java.util.List;
 
 public class Collector {
 
-	protected final int id;
+	protected int id;
 	protected String name, surname, location;
 	public List<Product>listProducts = new ArrayList <Product>(); 
 	
 	
-	public Collector(int id, String name, String surname, String location){
-	
-		this.id = id;
-		this.name = name;
-		this.surname = surname;
-		this.location = location;		
-}
 	
 	
 	
@@ -66,10 +59,12 @@ public class Collector {
 		this.listProducts = listProducts;
 	}
 
-
-
 	public int getId() {
 		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 
@@ -94,6 +89,10 @@ public class Collector {
 	    }
 	    return "Contenuto FamilySafe!";
 	}
+
+
+
+	
 
 }
 
