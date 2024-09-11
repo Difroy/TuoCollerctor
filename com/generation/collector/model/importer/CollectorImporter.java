@@ -1,4 +1,4 @@
-package com.generation.collector.controller;
+package com.generation.collector.model.importer;
 
 import com.generation.collector.model.entities.Collector;
 

@@ -1,4 +1,4 @@
-package com.generation.collector.controller;
+package com.generation.collector.model.importer;
 import java.io.File;
 import java.util.Scanner;
 
