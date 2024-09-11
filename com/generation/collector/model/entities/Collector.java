@@ -78,16 +78,17 @@ public class Collector {
 		return totale;
 	}
 	
-	public String familySafe() {
+	
+	public boolean familySafe() {
 	    for (Product p : listProducts) {
 	        if (p instanceof Book) {
 	            Book book = (Book) p;
 	            if (book.isAdult()) {
-	                return "Contenuti per adulti!";
+	                return false; 
 	            }
 	        }  
 	    }
-	    return "Contenuto FamilySafe!";
+	    return true;  
 	}
 
 
